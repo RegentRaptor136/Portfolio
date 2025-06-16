@@ -3,76 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Макар Лошицкий — Веб-разработчик</title>
+    <title data-i18n="title">Макар Лошицкий — Веб-разработчик</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
+      <div class="lang-switch">
+        <button onclick="switchLang()">🌐 EN / RU</button>
+      </div>
+
       <header>
-        <h1>Макар Лошицкий</h1>
-        <p class="subtitle">Веб-разработчик</p>
+        <h1 data-i18n="name">Макар Лошицкий</h1>
+        <p class="subtitle" data-i18n="subtitle">Веб-разработчик</p>
       </header>
 
       <div class="photo">
         <img src="./images/photo.jpg" alt="Фото Макара" />
       </div>
 
-      <section class="about">
-        <h2>Обо мне</h2>
-        <p>
-          Привет! Я — Макар Лошицкий, веб-разработчик. Создаю адаптивные,
-          современные и быстрые сайты. Работаю с HTML, CSS, JavaScript и GitHub.
+      <section>
+        <h2 data-i18n="about-title">Обо мне</h2>
+        <p data-i18n="about-text">
+          Привет! Я — Макар Лошицкий, веб-разработчик. Создаю адаптивные сайты
+          на HTML, CSS и JavaScript.
         </p>
       </section>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
+      <section>
+        <h2 data-i18n="contacts-title">Контакты</h2>
         <ul>
-          <li>📧 Email: losickijmakar136@gmail.com</li>
-          <li>
+          <li data-i18n="email">📧 Email: losickijmakar136@gmail.com</li>
+          <li data-i18n="github">
             💼 GitHub:
             <a href="https://github.com/RegentRaptor136">RegentRaptor136</a>
           </li>
-          <li>📱 Telegram: @KrRaptor</li>
+          <li data-i18n="telegram">📱 Telegram: @KrRaptor</li>
         </ul>
       </section>
 
-      <section class="project-cards">
-        <h2>Мои работы</h2>
+      <section>
+        <h2 data-i18n="projects-title">Мои работы</h2>
         <div class="cards">
-          <a href="https://example.com/project1" class="card" target="_blank">
-            <img src="project1.jpg" alt="Проект 1" />
-            <h3>Landing Page</h3>
-            <p>Современный лендинг для бизнеса.</p>
+          <a href="#" class="card" target="_blank">
+            <img src="project1.jpg" alt="" />
+            <h3 data-i18n="card1-title">Landing Page</h3>
+            <p data-i18n="card1-desc">Современный лендинг для бизнеса.</p>
           </a>
-          <a href="https://example.com/project2" class="card" target="_blank">
-            <img src="project2.jpg" alt="Проект 2" />
-            <h3>Сайт-визитка</h3>
-            <p>Личный сайт с информацией обо мне.</p>
+          <a href="#" class="card" target="_blank">
+            <img src="project2.jpg" alt="" />
+            <h3 data-i18n="card2-title">Сайт-визитка</h3>
+            <p data-i18n="card2-desc">Личный сайт с информацией обо мне.</p>
           </a>
-          <a href="https://example.com/project3" class="card" target="_blank">
-            <img src="project3.jpg" alt="Проект 3" />
-            <h3>Портфолио</h3>
-            <p>Коллекция моих лучших работ.</p>
+          <a href="#" class="card" target="_blank">
+            <img src="project3.jpg" alt="" />
+            <h3 data-i18n="card3-title">Портфолио</h3>
+            <p data-i18n="card3-desc">Коллекция моих лучших работ.</p>
           </a>
-          <a href="https://example.com/project4" class="card" target="_blank">
-            <img src="project4.jpg" alt="Проект 4" />
-            <h3>Приложение</h3>
-            <p>Интерактивный проект на JS.</p>
-          </a>
-          <a href="https://example.com/project4" class="card" target="_blank">
-            <img src="project4.jpg" alt="Проект 4" />
-            <h3>Приложение</h3>
-            <p>Интерактивный проект на JS.</p>
-          </a>
-          <a href="https://example.com/project4" class="card" target="_blank">
-            <img src="project4.jpg" alt="Проект 4" />
-            <h3>Приложение</h3>
-            <p>Интерактивный проект на JS.</p>
+          <a href="#" class="card" target="_blank">
+            <img src="project4.jpg" alt="" />
+            <h3 data-i18n="card4-title">Приложение</h3>
+            <p data-i18n="card4-desc">Интерактивный проект на JS.</p>
           </a>
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
